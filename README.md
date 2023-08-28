@@ -87,3 +87,20 @@ Node.jsを使ったCLIアプリ
   - 左辺がnulishで右辺を返す
   - Railsの`presence` に似ている
     - [Railsのpresenceとpresent?メソッド \- karlley](https://scrapbox.io/karlley/Rails%E3%81%AEpresence%E3%81%A8present%3F%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89)
+
+- Mocha
+  - テスティングフレームワーク
+  - `it`、`describe` 等の関数が定義される
+
+- `assert.strictEqual`
+  - Node.jsの標準モジュール
+  - `第一引数 == 第二引数` でない場合に例外を送出
+  - テスト実行時の`+ actual - expected` に比較時に一致しない部分が出力される
+
+- `npm install --save-dev`
+  - 開発時にのみ必要なライブラリをインストール
+  - `package.json` の`defDependencies` に追記される
+
+- ユニットテストを行う理由
+  - ユニットテストが可能な状態を保つことで適切にモジュール化する指針になる
+  - テストファイル自体がドキュメントになる
